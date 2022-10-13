@@ -28,7 +28,7 @@ schoolData["school_name"]= schoolData["school_name"].str.replace("Total","")
 # Remove trailing spaces
 schoolData["school_name"]= schoolData["school_name"].str.strip()
 
-# Remove percentage
+# Remove percentage teo
 def convertToNumber(column):
     column=column.str.replace("%","")
     column=pd.to_numeric(column)
